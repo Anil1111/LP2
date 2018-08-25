@@ -38,7 +38,11 @@ namespace _2208
             p1.Trabalhar(12);
             p1.Add(pet1);
             p1.Add(pet2);
-            
+            p1.SizeOf();
+            p1.Remove(pet1);
+            p1.SizeOf();
+            pet1.Brincar();
+
 
             Console.Read();
         }

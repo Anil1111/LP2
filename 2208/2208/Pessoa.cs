@@ -45,25 +45,18 @@ namespace _2208
 
         public void Remove(Animal a)
         {
-            string remove = Console.ReadLine();
-
             for(int i=0; i< qttd; i++)
-            {
-                if (remove == pet[i].Nome)
-                {
-                    for(int j = 0; j < qttd; j++)
-                    {
-                        pet[j] = pet[j + 1];
-                    }
-                    qttd--;
-                    break;
-                }
+            {            
+                 pet[i] = pet[i + 1];                   
+                 qttd--;
+                 break;     
+                             
             }
         }
 
         public void SizeOf()
         {
-
+            Console.WriteLine(nome+" tem "+qttd+" pet!");
         }
 
         public string Nome
